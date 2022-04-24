@@ -1,3 +1,121 @@
-body {
-  background-color: lightgray;
+:root {
+  --color-primario: #181818;
+  --color-secundario: #f0f0f0;
+  --clr-light-gray: #babecd;
+  --clr-light-gray-2: #bbbfce;
+  --tipografia-principal: "Roboto", sans-serif;
+  --tipografia-secundaria: "inter", sans-serif: ;
 }
+
+/* modo oscuro */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --color-primario: #f0f0f0;
+        --color-secundario: #181818;
+    }
+} */
+@media (preer-contrast: highg) {
+  :root {
+    --color-primario: black;
+    --color-secundario: white;
+  }
+}
+@media (prefer-reduced-motion: reduce) {
+  /* definir el selector concreto para reducir las animaciones */
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+/* margenes y paddings a todos las etiquetas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipografia-principal);
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*# sourceMappingURL=estilos.css.map */
