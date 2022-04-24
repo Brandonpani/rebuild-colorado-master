@@ -118,4 +118,63 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mainNav {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 1.75rem 0;
+}
+.mainNav .nav {
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.mainNav .nav .linkNav {
+  padding: 0.75rem 1.5rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+.mainNav .nav .linkNav:hover {
+  background-color: lightgray;
+}
+
+.kitchenRemodelingHero {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+  text-align: center;
+  min-height: 80vh;
+  display: grid;
+  place-content: center;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 5vw, 7rem);
+  font-weight: 600;
+  margin-block-end: 2rem;
+}
+
+.heroContent {
+  font-size: 2rem;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.ctaBanner {
+  background-color: #202020;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6rem 0;
+}
+
 /*# sourceMappingURL=estilos.css.map */
