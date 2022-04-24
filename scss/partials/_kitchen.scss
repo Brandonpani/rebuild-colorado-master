@@ -1,0 +1,28 @@
+.kitchenRemodelingHero {
+    @include container;
+    text-align: center;
+    min-height: 80vh; 
+    display: grid;
+    place-content: center;
+}
+
+.heroTitle {
+    @include heroTitle;
+    font-weight: 600;
+    margin-block-end: 2rem;
+}
+.heroContent {
+    font-size: 2rem;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.ctaBanner {
+    background-color: #202020;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6rem 0;
+
+    
+
+}
