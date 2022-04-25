@@ -8,7 +8,7 @@
 
 .heroTitle {
     @include heroTitle;
-    font-weight: 600;
+    font-weight: bold;
     margin-block-end: 2rem;
 }
 .heroContent {
@@ -23,6 +23,23 @@
     text-align: center;
     padding: 6rem 0;
 
-    
+    .bannerContentTitle {
+        font-size: 4rem;
+        width: 60%;
+        margin-inline: auto;
+        margin-block-end: 2rem;
+    }
+}
 
+// our four
+.ourFour {
+    @include container;
+    padding-block-start: 3rem;
+    .ourFourContainer {
+        display: flex;
+
+        .card {
+            padding: 3rem 1rem 2rem;
+        }
+    }
 }
