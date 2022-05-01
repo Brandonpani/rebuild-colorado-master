@@ -20,6 +20,16 @@
         height: 100%;
         
     }
+    .ctaHero {
+        margin-block-start: 2rem;
+
+        .btnHero {
+            color: #f2f2f2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+    }
 }
 
 .heroTitle {
@@ -49,15 +59,3 @@
     }
 }
 
-// our four
-.ourFour {
-    @include container;
-    padding-block-start: 3rem;
-    .ourFourContainer {
-        display: flex;
-
-        .card {
-            padding: 3rem 1rem 2rem;
-        }
-    }
-}

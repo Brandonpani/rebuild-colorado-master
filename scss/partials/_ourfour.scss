@@ -1,0 +1,16 @@
+// our four
+.ourFour {
+    @include container;
+    padding-block-start: 3rem;
+
+    .ourFourContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+        justify-content: center;
+
+        .card {
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+        }
+    }
+}
