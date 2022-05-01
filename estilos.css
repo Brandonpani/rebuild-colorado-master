@@ -159,15 +159,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
-.mainNav .nav li {
-  margin-inline: 3.5rem;
-}
 .mainNav .nav .linkNav {
   padding: 0.75rem 1.5rem;
-  font-size: 1.8rem;
 }
 .mainNav .nav .linkNav:hover {
   background-color: lightgray;
