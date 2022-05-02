@@ -108,6 +108,7 @@ svg {
 }
 
 body {
+  line-height: 1.6;
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--tipografia-principal);
@@ -138,6 +139,17 @@ body {
   padding: 0.75rem 1.75rem;
   outline: 1px solid #fff;
   border-radius: 3px;
+}
+
+.card-btn {
+  width: 120%;
+  margin-inline: auto;
+  transform: translateX(-10%);
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+  padding-block: 1.3rem;
+  background-color: rgb(28, 89, 230);
 }
 
 .scroll {
@@ -226,10 +238,25 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   justify-content: center;
+  gap: 2rem;
 }
 .ourFour .ourFourContainer .card {
-  padding: 3rem 1rem 2rem;
+  overflow: hidden;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 1rem 0;
   text-align: center;
+  border-radius: 2rem;
+  background-color: rgb(226, 226, 226);
+}
+.ourFour .ourFourContainer .card .cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.ourFour .ourFourContainer .card-btn {
+  padding-inline: 0;
 }
 
 .ctaBanner {
