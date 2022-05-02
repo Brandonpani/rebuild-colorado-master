@@ -150,6 +150,8 @@ body {
   padding: 0;
   padding-block: 1.3rem;
   background-color: rgb(28, 89, 230);
+  color: #f2f2f2;
+  font-weight: 600;
 }
 
 .scroll {
