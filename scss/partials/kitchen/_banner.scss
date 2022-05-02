@@ -1,0 +1,14 @@
+.ctaBanner {
+    background-color: #202020;
+    color: #f2f2f2;
+    text-align: center;
+    padding-block-start: 12rem;
+    padding-block-end: 12rem;
+
+    .bannerContentTitle {
+        font-size: 4rem;
+        width: 60%;
+        margin-inline: auto;
+        margin-block-end: 2rem;
+    }
+}

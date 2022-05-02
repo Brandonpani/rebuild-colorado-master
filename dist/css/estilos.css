@@ -216,19 +216,6 @@ body {
   margin-inline: auto;
 }
 
-.ctaBanner {
-  background-color: #202020;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 6rem 0;
-}
-.ctaBanner .bannerContentTitle {
-  font-size: 4rem;
-  width: 60%;
-  margin-inline: auto;
-  margin-block-end: 2rem;
-}
-
 .ourFour {
   width: 90%;
   max-width: 1400px;
@@ -243,6 +230,20 @@ body {
 .ourFour .ourFourContainer .card {
   padding: 3rem 1rem 2rem;
   text-align: center;
+}
+
+.ctaBanner {
+  background-color: #202020;
+  color: #f2f2f2;
+  text-align: center;
+  padding-block-start: 12rem;
+  padding-block-end: 12rem;
+}
+.ctaBanner .bannerContentTitle {
+  font-size: 4rem;
+  width: 60%;
+  margin-inline: auto;
+  margin-block-end: 2rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

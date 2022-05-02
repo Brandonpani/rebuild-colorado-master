@@ -1,0 +1,23 @@
+{
+  "name": "rebuild-colorado-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brandonpani/rebuild-colorado-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brandonpani/rebuild-colorado-master/issues"
+  },
+  "homepage": "https://github.com/Brandonpani/rebuild-colorado-master#readme",
+  "dependencies": {
+    "boxicons": "^2.1.2"
+  }
+}
