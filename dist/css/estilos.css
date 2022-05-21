@@ -146,7 +146,6 @@ body {
   margin-inline: auto;
   transform: translateX(-10%);
   outline: none;
-  border-radius: 0;
   padding: 0;
   padding-block: 1.3rem;
   background-color: rgb(28, 89, 230);
