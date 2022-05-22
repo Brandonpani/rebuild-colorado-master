@@ -58,6 +58,10 @@ p a {
   display: inline;
 }
 
+p {
+  margin-block-end: 1rem;
+}
+
 li {
   list-style-type: none;
 }
@@ -139,6 +143,13 @@ body {
   padding: 0.75rem 1.75rem;
   outline: 1px solid #fff;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-fill {
+  background-color: #2f2f2f;
+  color: #f2f2f2;
+  cursor: pointer;
 }
 
 .card-btn {
@@ -155,11 +166,6 @@ body {
 
 .scroll {
   height: 100vh;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 .mainNav {
@@ -185,10 +191,13 @@ body {
 }
 .mainNav .nav .linkNav {
   padding: 0.75rem 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .mainNav .nav .linkNav:hover {
   background-color: lightgray;
+}
+.mainNav .menuIcon {
+  display: flex;
 }
 
 .kitchenRemodelingHero {
@@ -261,6 +270,36 @@ body {
 }
 .ourFour .ourFourContainer .card-btn {
   padding-inline: 0;
+}
+
+.modalContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.modalContainer .modal {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.modalContainer p {
+  opacity: 0.8;
+}
+
+.modalContainer.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .ctaBanner {
