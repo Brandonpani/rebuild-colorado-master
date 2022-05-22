@@ -202,6 +202,10 @@ body {
   display: flex;
 }
 
+.activeLink {
+  color: #2c54f5;
+}
+
 .kitchenRemodelingHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../dist/images/IMG_3486.jpg);
   background-repeat: no-repeat;
@@ -275,7 +279,7 @@ body {
 }
 
 .modalContainer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   opacity: 0;
   pointer-events: none;
@@ -291,7 +295,7 @@ body {
 }
 .modalContainer .modal {
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   background-color: #f2f2f2;
   padding: 3rem;
