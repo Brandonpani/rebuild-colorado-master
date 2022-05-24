@@ -284,7 +284,7 @@ body {
 }
 
 .modalContainer {
-  background-color: rgba(0, 0, 0, 0.7);
+  margin-block-start: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
