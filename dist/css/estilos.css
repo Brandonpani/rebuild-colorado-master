@@ -138,6 +138,10 @@ body {
   font-weight: 600;
 }
 
+.content {
+  font-size: 1.6rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
@@ -169,9 +173,20 @@ body {
   height: 100vh;
 }
 
+main {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.hero {
+  padding-block-start: 12rem;
+}
+
 .mainNav {
   position: fixed;
   width: 100%;
+  min-height: 4rem;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
@@ -179,6 +194,8 @@ body {
   padding: 1.5rem 0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 .mainNav .nav {
   width: 100%;
@@ -205,6 +222,124 @@ body {
 
 .activeLink {
   color: #2c54f5;
+}
+
+nav {
+  background-color: #f2f2f2;
+  width: 100vw;
+  min-height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 300ms ease-in-out;
+}
+nav .wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .wrapper .logo-menu {
+  width: 10rem;
+}
+nav .wrapper .nav-links {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+nav .wrapper .nav-links li .nav-link {
+  padding: 0.75rem 1.75rem;
+  font-size: 1.6rem;
+  color: #202020;
+}
+nav .wrapper .nav-links li .nav-link {
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+nav .wrapper .nav-links li .nav-link:hover {
+  background-color: #303030;
+  color: #f2f2f2;
+}
+nav .wrapper .nav-links li .nav-link.active {
+  background-color: rgb(20, 90, 210);
+}
+nav .wrapper .btn {
+  margin: 0;
+}
+nav .wrapper .menu-ham {
+  display: none;
+  cursor: pointer;
+  pointer-events: all;
+}
+@media only screen and (max-width: 1205px) {
+  nav .wrapper {
+    position: relative;
+  }
+  nav .wrapper .nav-links {
+    display: block;
+    position: absolute;
+    right: -100%;
+    width: 40%;
+    background-color: #202020;
+  }
+  nav .wrapper .btn {
+    display: none;
+  }
+  nav .wrapper .menu-ham {
+    display: flex;
+    align-items: center;
+    width: 1.7rem;
+  }
+  nav .wrapper .menu-ham:hover .nav-links, nav .wrapper .menu-ham:focus .nav-links {
+    display: flex;
+  }
+  nav .wrapper.open .nav-links {
+    right: -6%;
+    width: 112%;
+    top: 145%;
+    opacity: 95%;
+    padding-block-end: 2rem;
+    text-align: center;
+  }
+  nav .wrapper.open .nav-links .nav-link {
+    font-size: 0.875rem;
+    line-height: 3.5;
+  }
+  nav .wrapper.open .menu__ham {
+    padding: 0.25rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav .wrapper .nav-links {
+    width: 50%;
+  }
+  nav .wrapper .nav-links .nav-link {
+    line-height: 3.5;
+  }
+  nav .wrapper.open .nav-links {
+    text-align: end;
+  }
+  nav .wrapper.open .nav-links .nav-link {
+    padding-inline-end: 4rem;
+  }
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.4));
 }
 
 .kitchenRemodelingHero {
