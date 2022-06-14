@@ -342,6 +342,12 @@ nav .wrapper .menu-ham {
   filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.4));
 }
 
+.bathroom {
+  background-color: #404040;
+  padding: 5rem 2rem;
+  margin-block-start: 10rem;
+  border-radius: 10px;
+}
 .kitchenRemodelingHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../dist/images/IMG_3486.jpg);
   background-repeat: no-repeat;
